@@ -1,7 +1,7 @@
 # Topic and Medium Generator Website for Artists
 
 ## What the Website Does
-My website have two function.
+My website has two function.
 1. Spin a topic wheel. The wheel has 8 topics on it. This wheel gives the artist a topic for their art.
 2. Spin a medium wheel that has 12 mediums on it. This wheel gives the artist a medium for the artist to use for their art.
 
