@@ -1,0 +1,90 @@
+/* Essentially the same styling as style1.css but wheel segments work differently */
+
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(67,67,172); /* Used the color scaling thing that is available in VSCode */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    overflow:auto;
+}
+
+.wheel{
+    position:relative;
+    width:500px;
+    height:500px;
+    padding-right: 50px;
+}
+
+.container{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background-color:white;
+    border-radius:50%;
+    border:15px solid grey;
+    position:relative;
+    overflow:auto;
+    transition: transform 5s;
+    background: conic-gradient(red 0deg, red 30deg,orange 30deg, orange 60deg, yellow 60deg, yellow 90deg, greenyellow 90deg, greenyellow 120deg, green 120deg, green 150deg, skyblue 150deg, skyblue 180deg, blue 180deg, blue 210deg, purple 210deg, purple 240deg,darkblue 240deg, darkblue 270deg, violet 270deg, violet 300deg, pink 300deg, pink 330deg, hotpink 330deg, hotpink 360deg);
+}
+
+#spin{
+    position:absolute;
+    top:52%;
+    left:48.3%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+    background-color:lightgrey;
+    border: 8px solid white;
+    font-weight:bold;
+    font-size:23px;
+    color:grey;
+    width:85px;
+    height:85px;
+    font-family:sans-serif,Arial,Helvetica;
+    border-radius:50%;
+    cursor:pointer;
+    outline:2px;
+    letter-spacing:1px;
+}
+
+.arrow{
+    position:absolute;
+    top:calc(50% - 260px);
+    left:48.3%;
+    transform:translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid white;
+    z-index:5;
+}
+
+#result{
+    padding-top:30px;
+    margin-top:20px;
+    color: white;
+    font-size: 20px;
+    text-align:center;
+}
+
+.navigation{
+    padding-top:130px;
+    font-size: 20px;
+    color: red;
+}
+
+.description{
+    font-size:20px;
+}
+
+.description-box{
+    padding-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+}
