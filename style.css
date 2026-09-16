@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#34495e;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+.wheel{
+    position:relative;
+    width:500px;
+    height:500px;
+}
+
+.container{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background-color:white;
+    border-radius:50%;
+    border:15px solid grey;
+    position:relative;
+    overflow:hidden;
+    transition: transform 5s;
+}
+
+.container div{
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:0;
+    left:50%;
+    transform-origin:0% 100%;
+    clip-path:polygon(0 0, 100% 0, 0 100%);
+    color:transparent;
+}
+
+.container .one{
+    background-color:red;
+    transform:rotate(0deg);
+}
+
+.container .two{
+    background-color:orange;
+    transform:rotate(45deg);
+}
+
+.container .three{
+    background-color: yellow;
+    transform:rotate(90deg);
+}
+
+.container .four{
+    background-color:green;
+    transform:rotate(135deg);
+}
+
+.container .five{
+    background-color:blue;
+    transform:rotate(180deg);
+}
+
+.container .six{
+    background-color:purple;
+    transform:rotate(225deg);
+}
+
+.container .seven{
+    background-color:violet;
+    transform:rotate(270deg);
+}
+
+.container .eight{
+    background-color:hotpink;
+    transform:rotate(315deg);
+}
+
+#spin{
+    position:absolute;
+    top:52%;
+    left:53%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+    background-color:lightgrey;
+    text-transform: uppercase;
+    border:8px solid white;
+    font-weight:bold;
+    font-size:23px;
+    color:grey;
+    width:85px;
+    height:85px;
+    font-family:sans-serif, Arial, Helvetica;
+    border-radius:50%;
+    cursor:pointer;
+    outline:2px;
+    letter-spacing:1px;
+}
+
+.arrow{
+    position:absolute;
+    top:calc(50% - 260px);
+    left:53.1%; /* This weird percent is what is allowing for the arrow on the wheel to be centered*/
+    transform:translateX(-50%);
+    border-left:15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid white;
+    z-index:5;
+}
+
+#result{
+    padding-top:30px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
